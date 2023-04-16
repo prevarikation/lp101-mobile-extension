@@ -1,0 +1,13 @@
+.forumbg.hide-persistent-read .read {
+    display: none;
+}
+
+.forumbg li.header dt {
+    cursor: pointer;
+}
+.forumbg li.header dt::before {
+    content: 'vvv '
+}
+.forumbg.hide-persistent-read li.header dt::before {
+    content: '>>> ';
+}

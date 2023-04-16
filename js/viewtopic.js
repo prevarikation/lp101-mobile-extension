@@ -1,0 +1,2 @@
+// imgur embeds break smooth shrinking because they have inline styles of style="max-width: 800px;max-height: 800px"
+document.querySelectorAll(".postbody .content img").forEach(el => el.style.removeProperty('max-width'));

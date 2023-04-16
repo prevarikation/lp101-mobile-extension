@@ -1,0 +1,9 @@
+/*
+ul.topiclist dd.topics, ul.topiclist dd.posts, ul.topiclist dd.views { display: none; }
+ul.topiclist dt { width: 40% !important; }
+dd.lastpost { width: auto !important; }
+ul.topiclist dd { float: none; }
+ul.topiclist details { padding: 0.5em; }
+a.forumtitle { display: block; }
+.hide { display: none !important; }
+*/
