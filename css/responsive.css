@@ -40,6 +40,14 @@
     #content {
         padding: 0 5px;
     }
+
+    /* enlarge "jump to latest post" images */
+    img[src='./styles/prosilver/imageset/icon_topic_latest.gif'], img[src='./styles/prosilver/imageset/icon_topic_newest.gif'] {
+        position: relative;
+        left: -2px;
+        bottom: -2px;
+        width: 15px; /* base dimensions 11x9 */
+    }
 }
 
 /***** large enough to be standard view *****/

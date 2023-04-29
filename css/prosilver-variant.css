@@ -4632,7 +4632,7 @@ div.clear
 #header-content-row .topLink a {
     display: block;
     padding: 3px 14px;
-    height: 28px;
+    min-height: 28px;
 }
 
 #header .header-mid-spacer, #header .header-bottom-spacer {
