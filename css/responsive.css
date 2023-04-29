@@ -1,5 +1,4 @@
-/*** BUG: TODO: fix problem with <select> breaking pages */
-/**** from responsive.css ****/
+/**** max-width steps taken from prosilver's responsive.css ****/
 @media (max-width: 320px) {
 	select, .inputbox {
 		max-width: 240px;
