@@ -4623,7 +4623,7 @@ div.clear
 
 #header-content-row .topLink {
     list-style: none;
-    border-width 0 2px;
+    border-width: 0 2px;
     border-style: solid;
     border-color: var(--header-color-bg-contrast);
     background-color: var(--header-color-deep);
