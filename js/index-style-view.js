@@ -7,3 +7,5 @@ Array.from(document.querySelectorAll("li.row dd.lastpost dfn")).forEach(function
     link.innerText = el.innerText;
     el.innerHTML = link.outerHTML;
 });
+
+function removeElement(el) { el.parentElement.removeChild(el); }
