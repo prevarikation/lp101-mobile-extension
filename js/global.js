@@ -130,4 +130,12 @@ document.head.appendChild(meta);
 // done processing, show custom div
 container.classList.remove('hidden');
 
+// Solve? issues returning to anchor when loaded
+if (document.readyState === 'complete') {
+	jumpToAnchor();
+} else {
+	document.addEventListener('load', jumpToAnchor);
+}
+
 function removeElement(el) { el.parentElement.removeChild(el); }
+function jumpToAnchor() { document.querySelector(window.location.hash).scrollIntoView(); }
