@@ -13,6 +13,7 @@ var header = document.createElement('div');
 header.id = "header";
 header.innerHTML = `
     <div id="header-content-row">
+	<img id="header-img-1" src="https://www.lockpicking101.com/images/header_1.gif" alt="">
         <div class="title-content">
             <h2 class="maintitle">Lock Picking 101 Forum</h2>
             <span class="genmed">A community dedicated to the fun and ethical hobby of lock picking.</span>
@@ -26,7 +27,9 @@ header.innerHTML = `
         </ul>
     </div>
     <div class="header-mid-spacer" style=""></div>
-    <div class="header-bottom-spacer"><img src="https://www.lockpicking101.com/images/header_3.gif" alt=""></div>
+    <div class="header-bottom-spacer">
+        <img class="header-side-background" src="https://www.lockpicking101.com/images/back.gif" alt=""><div class="header-bottom-spacer-span"><img id="header-img-3" src="https://www.lockpicking101.com/images/header_3.gif" alt=""></div><img class="header-side-background" src="https://www.lockpicking101.com/images/back.gif" alt="">
+    </div>
 `;
 document.body.appendChild(header);
 

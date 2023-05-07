@@ -40,6 +40,10 @@
         padding: 0 5px;
     }
 
+    #header-img-1 {
+        display: none;
+    }
+
     /* enlarge "jump to latest post" images */
     img[src='./styles/prosilver/imageset/icon_topic_latest.gif'], img[src='./styles/prosilver/imageset/icon_topic_newest.gif'] {
         position: relative;
@@ -52,15 +56,16 @@
 /***** large enough to be standard view *****/
 /* prosilver responsive switches at 700px, and this is 700px + 166px for the side menu */
 @media screen and (min-width: 867px) {
+    #header, #container {
+	margin: 0 10px;
+    }
+
     #header .header-mid-spacer, #header .header-bottom-spacer {
         display: block;
     }
 
     #header-content-row {
-        padding-left: calc(var(--header-img-1-width) - 40px);
-        border-image-source: url("https://www.lockpicking101.com/images/header_1.gif");
-        border-image-slice: 0 0 0 100%;
-        border-image-width: 0 0 0 var(--header-img-1-width);
+        padding-left: calc(var(--header-img-1-width));
     }
 
     #header-content-row .title-content {

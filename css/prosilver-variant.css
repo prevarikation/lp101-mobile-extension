@@ -3766,9 +3766,7 @@ body {
 	background-color: #FFFFFF;
 	font-size: 62.5%; /* This sets the default font size to be equivalent to 10px */
 	margin: 0px; padding:  0;
-	background-image: url("https://www.lockpicking101.com/images/back.gif");
-	background-position: top;
-	background-repeat: repeat-x;}
+}
 
 #wrapheader {
 	height: auto !important;
@@ -4588,6 +4586,7 @@ div.clear
 }
 
 #header-content-row {
+    position: relative;
     display: flex;
     align-items: end;
     flex-wrap: wrap;
@@ -4595,6 +4594,12 @@ div.clear
 	overflow: hidden;
     min-height: var(--header-img-1-height);
     background-color: var(--header-color-bg);
+}
+
+#header-img-1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 #header-content-row .title-content {
@@ -4648,8 +4653,24 @@ div.clear
 }
 
 #header .header-bottom-spacer {
+    position: relative;
+    margin-left: -10px;
+	margin-right: -10px;
+}
+
+#header .header-bottom-spacer-span {
+    display: inline-block;
+	width: calc(100% - 20px);
+    margin-left: 10px;
     border-radius: 10px;
     background-color: var(--header-color-bg-img-match);
+}
+
+#header .header-side-background {
+    position: absolute;
+    top: -63px;
+    width: 10px;
+    height: 199px;
 }
 
 /***** CONTENT *****/
