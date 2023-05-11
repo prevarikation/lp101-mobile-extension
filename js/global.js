@@ -125,10 +125,15 @@ for (var el of Array.from(document.querySelector('td.contentMain').childNodes)) 
 removeElement(originalContainer);
 
 // add mobile meta el
-var meta = document.createElement("meta");
+const mobileViewportSupportId = "mobile-viewport-support";
+const meta = document.createElement("meta");
+meta.setAttribute("id", mobileViewportSupportId);
 meta.setAttribute("name", "viewport");
-meta.setAttribute("content", "width=device-width, initial-scale=1");
+// maximum scale is set to control bug when page zooms on reload
+meta.setAttribute("content", "width=device-width, maximum-scale=1");//, initial-scale=1");
 document.head.appendChild(meta);
+// undo maximum scale so user can zoom
+document.getElementById(mobileViewportSupportId).setAttribute("content", "width=device-width");
 
 // done processing, show custom div
 container.classList.remove('hidden');
