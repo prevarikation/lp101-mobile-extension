@@ -1363,7 +1363,7 @@ dl.codebox code {
 	max-height: 200px;
 	white-space: normal;
 	padding-top: 5px;
-	font: 0.9em Monaco, "Andale Mono","Courier New", Courier, mono;
+	font: 0.9em Monaco, "Andale Mono","Courier New", Courier, monospace;
 	line-height: 1.3em;
 	color: #8b8b8b;
 	margin: 2px 0;
