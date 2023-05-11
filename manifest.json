@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "LP102",
-    "version": "0.4.1",
+    "version": "0.4.2",
     "description": "Adds mobile/responsive support to the LP101 forums.",
 
     "content_scripts": [
