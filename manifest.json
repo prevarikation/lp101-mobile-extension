@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "LP102",
-    "version": "0.4.2",
+    "version": "0.5",
     "description": "Adds mobile/responsive support to the LP101 forums.",
 
     "content_scripts": [
@@ -26,6 +26,10 @@
         {
             "matches": ["*://www.lockpicking101.com/search.php?search_id=*"],
             "js": ["js/index-style-view.js"]
-        }
+        },
+	{
+            "matches": ["*://www.lockpicking101.com/ucp.php*"],
+            "css": ["css/ucp.css"]
+	}
     ]
 }

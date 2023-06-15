@@ -1,0 +1,45 @@
+@media (max-width: 866px) {
+	#cp-main #postingbox #subject {
+		max-width: 240px;
+	}
+	#cp-main #postingbox #message {
+		min-width: 300px;
+		max-width: unset;
+	}
+}
+
+@media (max-width: 570px) {
+	#tabs {
+		min-width: unset !important;
+		margin: unset !important;
+	}
+	#tabs ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	#tabs .activetab a span {
+		padding-bottom: 5px;
+	}
+
+	#cp-menu {
+		display: flex;
+		float: unset !important;
+		width: unset !important;
+	}
+
+	#navigation {
+		padding-top: unset !important;
+	}
+	#navigation ul {
+		margin: 0 !important;
+	}
+
+	#cp-main {
+		float: unset !important;
+		width: unset !important;
+	}
+
+	#cp-main #postingbox #subject {
+		max-width: 220px;
+	}
+}
