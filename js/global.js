@@ -146,4 +146,4 @@ if (document.readyState === 'complete') {
 }
 
 function removeElement(el) { el.parentElement.removeChild(el); }
-function jumpToAnchor() { document.querySelector(window.location.hash).scrollIntoView(); }
+function jumpToAnchor() { if (window.location.hash.length > 0) { document.querySelector(window.location.hash).scrollIntoView(); } }
