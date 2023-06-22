@@ -1,8 +1,9 @@
-// TODO: if not logged in, only current time shows and breaks the rest of the code
-// last visit cleanup
-//document.querySelector("#content > p:first-of-type").classList.add('last-visit');
-// current time cleanup
-//document.querySelector("#content > p:nth-of-type(2)").classList.add('current-time');
+// for current/last login times
+const timeListing = document.querySelector('#content > p:first-child');
+timeListing.classList.add('time-listing');
+if (timeListing.nextElementSibling.tagName === "P") {
+	timeListing.nextElementSibling.classList.add('time-listing');
+}
 
 // for programmatic toggling of extended info
 var largeViewMediaQuery = window.matchMedia("screen and (min-width: 867px)");

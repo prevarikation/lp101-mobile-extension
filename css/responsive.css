@@ -32,6 +32,15 @@
 }
 
 @media (max-width: 600px) {
+    #content .time-listing ~ .time-listing {
+        float: right;
+	clear: right;
+        text-align: right;
+    }
+    #content .time-listing ~ .time-listing ~ * {
+        clear: both;
+    }
+
 	.display-options > label:first-of-type {
 	    display: block;
 	    clear: both;
@@ -113,7 +122,7 @@
     #content .last-visit {
         display: initial;
     }
-    #content .current-time {
+    #content .time-listing {
         margin-bottom: 1.5em;
     }
 
