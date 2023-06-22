@@ -51,6 +51,10 @@
         bottom: -2px;
         width: 15px; /* base dimensions 11x9 */
     }
+
+    .pagination {
+	padding: 8px 0 !important;
+    }
 }
 
 /***** large enough to be standard view *****/
