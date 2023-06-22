@@ -31,6 +31,13 @@
     }
 }
 
+@media (max-width: 600px) {
+	.display-options > label:first-of-type {
+	    display: block;
+	    clear: both;
+	}
+}
+
 @media (max-width: 866px) {
     select, .inputbox {
 		max-width: 280px;
