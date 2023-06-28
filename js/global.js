@@ -93,6 +93,16 @@ dropdownContainer.innerHTML = `
 `;
 sideMenu.appendChild(dropdownContainer);
 
+// move Discord invites to bottom of dropdown menu
+const discordInviteIndex = dropdownItems.findIndex(o => o.isOptgroup && o.name === "Live Chat on Discord");
+if (discordInviteIndex !== -1) {
+	for (var nextHeaderIndex = discordInviteIndex + 1; nextHeaderIndex < dropdownItems.length && !dropdownItems[nextHeaderIndex].isOptgroup; ++nextHeaderIndex) {}
+	if (nextHeaderIndex < dropdownItems.length) {
+		const discordItems = dropdownItems.splice(discordInviteIndex, (nextHeaderIndex - discordInviteIndex));
+		dropdownItems.push.apply(dropdownItems, discordItems);
+	}
+}
+
 // populate dropdown menu
 var dropdown = document.getElementById("side-menu-jumpbox");
 for (var item of dropdownItems) {
