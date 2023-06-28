@@ -1,8 +1,12 @@
 {
     "manifest_version": 2,
     "name": "LP102",
-    "version": "0.7",
+    "version": "0.8",
     "description": "Adds mobile/responsive support to the LP101 forums.",
+    "icons": {
+	    "48": "icon-48.png",
+	    "96": "icon-96.png"
+    },
 
     "content_scripts": [
         {
@@ -11,24 +15,29 @@
             "css": ["css/prosilver-variant.css", "css/responsive.css"]
         },
         {
-            "matches": ["*://www.lockpicking101.com/", "*://www.lockpicking101.com/index.php*"],
+            "matches": ["*://www.lockpicking101.com/*"],
+            "include_globs": ["*://www.lockpicking101.com", "*://www.lockpicking101.com/", "*://www.lockpicking101.com/index.php*"],
             "js": ["js/index-style-view.js", "js/forum-index.js"]
         },
         {
-            "matches": ["*://www.lockpicking101.com/viewforum.php*"],
+            "matches": ["*://www.lockpicking101.com/*"],
+            "include_globs": ["*://www.lockpicking101.com/viewforum.php*"],
             "js": ["js/index-style-view.js", "js/viewforum.js"],
             "css": ["css/viewforum.css"]
         },
         {
-            "matches": ["*://www.lockpicking101.com/viewtopic.php*"],
+            "matches": ["*://www.lockpicking101.com/*"],
+            "include_globs": ["*://www.lockpicking101.com/viewtopic.php*"],
             "js": ["js/viewtopic.js"]
         },
         {
-            "matches": ["*://www.lockpicking101.com/search.php?search_id=*"],
+            "matches": ["*://www.lockpicking101.com/*"],
+            "include_globs": ["*://www.lockpicking101.com/search.php?search_id=*"],
             "js": ["js/index-style-view.js"]
         },
 	{
-            "matches": ["*://www.lockpicking101.com/ucp.php*"],
+            "matches": ["*://www.lockpicking101.com/*"],
+            "include_globs": ["*://www.lockpicking101.com/ucp.php*"],
             "css": ["css/ucp.css"]
 	}
     ]
