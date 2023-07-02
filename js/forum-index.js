@@ -1,8 +1,10 @@
 // for current/last login times
 const timeListing = document.querySelector('#content > p:first-child');
-timeListing.classList.add('time-listing');
-if (timeListing.nextElementSibling.tagName === "P") {
-	timeListing.nextElementSibling.classList.add('time-listing');
+if (timeListing) {
+	timeListing.classList.add('time-listing');
+	if (timeListing.nextElementSibling.tagName === "P") {
+		timeListing.nextElementSibling.classList.add('time-listing');
+	}
 }
 
 // for programmatic toggling of extended info
