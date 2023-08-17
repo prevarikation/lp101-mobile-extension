@@ -30,6 +30,11 @@
             "include_globs": ["*://www.lockpicking101.com/viewtopic.php*"],
             "js": ["js/viewtopic.js"]
         },
+	{
+            "matches": ["*://www.lockpicking101.com/*"],
+            "include_globs": ["*://www.lockpicking101.com/posting.php*"],
+            "css": ["css/posting.css"]
+        },
         {
             "matches": ["*://www.lockpicking101.com/*"],
             "include_globs": ["*://www.lockpicking101.com/search.php?search_id=*"],
